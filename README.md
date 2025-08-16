@@ -2,6 +2,10 @@
 
 **Poultry Scope** 🐤🐣 Poultry Scope is a React Native mobile application that leverages AI (MobileNetV3) to predict poultry diseases based on feces analysis. The app connects to a server via a REST API, enabling farmers and poultry keepers to quickly and accurately assess the health of their flock.
 
+<p algn="center">
+  <img src="/images/adaptive-icon.png" alt="UI" width="200"/>
+</p>
+
 > This repository contains two main sub directory which are:
 
 1. `mobile` - The mobile app that does predictions by sending requests to the API server using images of a poultry feces images.
@@ -41,6 +45,44 @@
 1. Capture or upload an image of poultry feces.
 2. The app sends the image to the AI server for analysis.
 3. Receive instant prediction results and recommended actions.
+
+### Sample ScreenShots
+
+The following screenshots shows the basic UI of the mobile application.
+
+<p algn="center">
+  <img src="/images/0.jpeg" alt="UI" width="200"/>
+  <img src="/images/1.jpeg" alt="UI" width="200"/>
+  <img src="/images/2.jpeg" alt="UI" width="200"/>
+  <img src="/images/3.jpeg" alt="UI" width="200"/>
+  <img src="/images/4.jpeg" alt="UI" width="200"/>
+  <img src="/images/5.jpeg" alt="UI" width="200"/>
+  <img src="/images/6.jpeg" alt="UI" width="200"/>
+  <img src="/images/7.jpeg" alt="UI" width="200"/>
+  <img src="/images/8.jpeg" alt="UI" width="200"/>
+  <img src="/images/9.jpeg" alt="UI" width="200"/>
+  <img src="/images/10.jpeg" alt="UI" width="200"/>
+  <img src="/images/11.jpeg" alt="UI" width="200"/>
+</p>
+
+### 📸 Example Prediction
+
+You can send the request to the server. Here are some examples of requests that are send to the server using `cURL` locally.
+
+```shell
+# healthy
+cURL -X POST -F image=@healthy.jpg http://127.0.0.1:8000/api/v1/feces/predict
+
+# coccidiosis
+cURL -X POST -F image=@coccidiosis.jpg http://127.0.0.1:8000/api/v1/feces/predict
+
+# salmonella
+cURL -X POST -F image=@salmonella.jpg http://127.0.0.1:8000/api/v1/feces/predict
+
+# newcastle
+cURL -X POST -F image=@newcastle.jpg http://127.0.0.1:8000/api/v1/feces/predict
+
+```
 
 ### Server API Response
 
