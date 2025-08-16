@@ -2,9 +2,7 @@
 
 **Poultry Scope** 🐤🐣 Poultry Scope is a React Native mobile application that leverages AI (MobileNetV3) to predict poultry diseases based on feces analysis. The app connects to a server via a REST API, enabling farmers and poultry keepers to quickly and accurately assess the health of their flock.
 
-<p algn="center">
-  <img src="/images/adaptive-icon.png" alt="UI" width="200"/>
-</p>
+<p align="center"><img src="/images/adaptive-icon.png" alt="UI" width="200"/></p>
 
 > This repository contains two main sub directory which are:
 
@@ -50,7 +48,7 @@
 
 The following screenshots shows the basic UI of the mobile application.
 
-<p algn="center">
+<p align="center">
   <img src="/images/0.jpeg" alt="UI" width="200"/>
   <img src="/images/1.jpeg" alt="UI" width="200"/>
   <img src="/images/2.jpeg" alt="UI" width="200"/>
